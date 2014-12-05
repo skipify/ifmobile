@@ -1,7 +1,7 @@
 {
   "name": "is-mobile",
   "version": "0.0.1",
-  "description": "Detect Mobile Browsers,ismobile",
+  "description": "Detect Mobile Browsers,ismobile,express middleware",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "ismobile",
-    "Detect Mobile"
+    "Detect Mobile",
+    "express middleware"
   ],
   "author": "skipify@qq.com",
   "license": "MIT"
