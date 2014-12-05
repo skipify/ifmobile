@@ -1,0 +1,19 @@
+{
+  "name": "is-mobile",
+  "version": "0.0.1",
+  "description": "Detect Mobile Browsers,ismobile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skipify/ismobile"
+  },
+  "keywords": [
+    "ismobile",
+    "Detect Mobile"
+  ],
+  "author": "skipify@qq.com",
+  "license": "MIT"
+}
