@@ -1,12 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var isMobile = require('is-mobile');
+var ifMobile = require('ifmobile');
 
-router.use('/',isMobile); // req.isMobile  true /false /undefined
-//router.use(isMobile); all path  req.isMobile  true /false
+router.use('/',ifMobile); // req.ifMobile  true /false /undefined
+//router.use(ifMobile); all path  req.ifMobile  true /false
 /* GET home page. */
 router.get('/', function(req, res) {
-	var colors = require('colors');
-	console.log(req.isMobile);
+	console.log(req.ifMobile);
   res.render('index', { title: 'Express' });
 })

@@ -5,37 +5,37 @@ ismobile
 
 ### NODE
 	
-	npm install is-mobile
+	npm install ifmobile
 ### BROWSER
-	<script src="ismobile.js"></script>
+	<script src="ifmobile.js"></script>
 
 # EXPRESS 
 	
 ## app.js
 	
 	global setting
-	var isMobile = require('is-mobile');
-	app.use(isMobile);
+	var isMobile = require('ifmobile');
+	app.use(ifMobile);
 
 	//then: in routes files you can use
-		req.isMobile  detect is or not mobile
+		req.ifMobile  detect is or not mobile
 
 		//true/false/undefined
 ## routes files
 	
 	var express = require('express');
 	var router = express.Router();
-	var isMobile = require('is-mobile');
+	var ifMobile = require('ifmobile');
 
-	router.use('/',isMobile); // req.isMobile  true /false /undefined
-	//router.use(isMobile); all path  req.isMobile  true /false
+	router.use('/',ifMobile); // req.ifMobile  true /false /undefined
+	//router.use(ifMobile); all path  req.ifMobile  true /false
 
 	/* GET home page. */
 	router.get('/', function(req, res) {
-		console.log(req.isMobile);
+		console.log(req.ifMobile);
 	  res.render('index', { title: 'Express' });
 	})
 
 ## In Browser
 	
-	isMobile()  //true/false
+	ifMobile()  //true/false

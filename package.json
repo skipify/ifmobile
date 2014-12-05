@@ -1,5 +1,5 @@
 {
-  "name": "is-mobile",
+  "name": "ifmobile",
   "version": "0.0.1",
   "description": "Detect Mobile Browsers,ismobile,express middleware",
   "main": "index.js",

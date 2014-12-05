@@ -1,5 +1,5 @@
 (function(){
-	function isMobile(ua){
+	function ifMobile(ua){
 		ua = ua || navigator.userAgent || navigator.vendor || window.opera;
 		ua = ua.toLowerCase();
 		//from http://detectmobilebrowsers.com/
@@ -12,11 +12,11 @@
 	if(typeof module !== 'undefined' && module.exports){
 		module.exports = (function(){
 			return function(req,res,next){
-				req.isMobile = isMobile(req.headers['user-agent']);
+				req.ifMobile = ifMobile(req.headers['user-agent']);
 				next();
 			}
 		}).call(this);
 	}else{
-		window.isMobile = isMobile;
+		window.ifMobile = ifMobile;
 	}
 })();
