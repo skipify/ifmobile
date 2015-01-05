@@ -1,3 +1,4 @@
+//browser check
 (function(){
 	function ifMobile(ua){
 		ua = ua || navigator.userAgent || navigator.vendor || window.opera;
